@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--Stylesheet links and basic page set up-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -23,6 +24,7 @@
   </head>
 
   <body>
+    <!--Header and Jumbotron Provided by Course-->
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
@@ -30,12 +32,13 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-      <div class = "row"></div>
-        <div class = "col">9am</div>
-        <textarea class = "col"></textarea>
-        <button class = "col">Save</button>
+      <div class = "row time-block"></div>
+        <div class = "col-1 hour pt-2">9am</div>
+        <textarea class = "col-10 plan"></textarea>
+        <button class = "col-1 saveBtn">Save</button>
     </div>
-
+    
+    <!--Source List-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
