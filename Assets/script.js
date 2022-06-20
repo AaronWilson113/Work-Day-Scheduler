@@ -15,8 +15,20 @@ saveBtn.on("click", function() {
     localStorage.setItem(time, plan);
 });
 
+//function to call local storage info back to relavant empty block upon refresh
+function usePlanner() {
 
+    $(".hour").each(function() {
+        var currHour = $(this).text();
+        var currPlan = localStorage.getItem(currHour);
 
+        
+
+        if(currPlan !== null) {
+            $(this).siblings(".plan").val(currPlan);
+        }
+    });
+}
 
 
 
