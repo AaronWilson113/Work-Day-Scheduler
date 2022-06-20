@@ -1,15 +1,26 @@
-//Defining TimeBlock Variables
+//Selecting TimeBlock Variables
 var timeBlock = $(".time-block")
-var saveBtn  = $(".savebtn");
+var saveBtn = $(".saveBtn");
 var timeContainer = $(".container")
 
-//on click event to save contents of timeblocks to local storage
 
+//on click event to save contents of timeblocks to local storage
 saveBtn.on("click", function() {
 
+   
     var time = $(this).siblings(".hour").text();
     var plan = $(this).siblings(".plan").val();
 
-    localStorage.setItem(time, plan);
     
+    localStorage.setItem(time, plan);
 });
+
+
+
+
+
+
+usePlanner();
+
+
+
